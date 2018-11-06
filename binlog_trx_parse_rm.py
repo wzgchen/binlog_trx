@@ -333,12 +333,12 @@ Command line options :
     -d, --database          # IN  : specify database (No default value).
 Sample :
    # 查看binlog时间起始点
-   shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.36.101 -uadmin -poracle -P3306 -t
+   shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.1.101 -uadmin -p123 -P3306 -t
    # 根据时间点进行分析
-   shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.36.101 -uadmin -poracle -P3306 --start-datetime="2018-11-04 14:46:42"  --stop-datetime="2018-11-04 15:00:00"
-   shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.36.101 -uadmin -poracle -P3306 --start-datetime="2018-11-04 14:46:42"  --stop-datetime="2018-11-04 15:00:00" -d slow_query_log
+   shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.1.101 -uadmin -p123 -P3306 --start-datetime="2018-11-04 14:46:42"  --stop-datetime="2018-11-04 15:00:00"
+   shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.1.101 -uadmin -p123 -P3306 --start-datetime="2018-11-04 14:46:42"  --stop-datetime="2018-11-04 15:00:00" -d sh
    # 根据post点进行分析
-   shell> shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.36.101 -uadmin -poracle -P3306  --start-position=6471  --stop-position=9995 
+   shell> shell> python binlog_trx_parse_rm.py -f mysql-bin.004595 -h 192.168.1.101 -uadmin -p123 -P3306  --start-position=6471  --stop-position=9995 
 ==============================================================================:============"""
 
     print usage_info
