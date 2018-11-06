@@ -1,3 +1,7 @@
+1.可以统计binlog表操作频率 <br>
+2.可以查看binlog中的锁     <br>
+3.可以查看binlog中的大事务 <br>
+
 Command line options :<br>
     --help                  # OUT : print help info <br>
     -f, --binlog            # IN  : binlog file. (required:mysql-bin.000043) <br>
